@@ -62,7 +62,7 @@ def select_all(con):
         print(Error)
 
 
-def update_data(con, salary, id):
+def update_data(con, mailtext, id):
     try:
         cur = con.cursor()
         cur.execute("UPDATE mail SET mailtext = ?  WHERE id = ?", ('mailtext', id))
